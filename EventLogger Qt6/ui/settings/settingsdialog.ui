@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings/Ustawienia</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>350</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="fieldGrowthPolicy">
+       <enum>QFormLayout::ExpandingFieldsGrow</enum>
+      </property>
+      <property name="labelAlignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelCallsign">
+        <property name="text">
+         <string>Callsign:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="Callsign"/>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelLocator">
+        <property name="text">
+         <string>Lokator:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="Locator">
+        <property name="placeholderText">
+         <string>JO82lk</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelGPS">
+        <property name="text">
+         <string>Pozycja GPS:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <layout class="QHBoxLayout" name="layoutGPS">
+        <item>
+         <widget class="QLineEdit" name="GPS_latitude">
+          <property name="placeholderText">
+           <string>52.4083</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="GPS_longitude">
+          <property name="placeholderText">
+           <string>16.9342</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelQRZlogin">
+        <property name="text">
+         <string>QRZ Login:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="QRZlogin"/>
+      </item>
+
+      <item row="4" column="0">
+       <widget class="QLabel" name="labelQRZpassword">
+        <property name="text">
+         <string>QRZ Password:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="QRZpassword"/>
+      </item>
+
+      <item row="5" column="0">
+       <widget class="QLabel" name="labelQRZapiKey">
+        <property name="text">
+         <string>QRZ API Key:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="QRZapiKey">
+        <property name="placeholderText">
+         <string>Wypełnij tylko jeśli posiadasz subskrypcję QRZ.com</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="6" column="0">
+       <widget class="QLabel" name="labelServer1">
+        <property name="text">
+         <string>Server 1:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <layout class="QHBoxLayout" name="layoutServer1">
+        <item>
+         <widget class="QLineEdit" name="ServerAddress_1">
+          <property name="text">
+           <string>127.0.0.1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelPort1">
+          <property name="text">
+           <string>Port:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="ServerPort_1">
+          <property name="maximumWidth">
+           <number>50</number>
+          </property>
+          <property name="inputMask">
+           <string>99999</string>
+          </property>
+          <property name="text">
+           <string>2237</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+
+      <item row="7" column="0">
+       <widget class="QLabel" name="labelServer2">
+        <property name="text">
+         <string>Server 2:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <layout class="QHBoxLayout" name="layoutServer2">
+        <item>
+         <widget class="QLineEdit" name="ServerAddress_2">
+          <property name="text">
+           <string>127.0.0.1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelPort2">
+          <property name="text">
+           <string>Port:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="ServerPort_2">
+          <property name="maximumWidth">
+           <number>50</number>
+          </property>
+          <property name="inputMask">
+           <string>99999</string>
+          </property>
+          <property name="text">
+           <string>2237</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Zapisz</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Anuluj</string>
+      </property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

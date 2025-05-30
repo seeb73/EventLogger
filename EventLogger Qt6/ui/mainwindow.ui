@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>652</width><height>387</height></rect>
+  </property>
+  <property name="windowTitle"><string>EventLogger</string></property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_lineCallsign">
+      <property name="text"><string>Callsign</string></property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineCallsign">
+      <property name="minimumSize"><size><width>40</width><height>50</height></size></property>
+      <property name="maximumSize"><size><width>300</width><height>16777215</height></size></property>
+      <property name="font">
+       <font><family>Segoe UI Black</family><pointsize>30</pointsize><weight>75</weight><bold>true</bold></font>
+      </property>
+      <property name="styleSheet"><string notr="true">color: #ffa500;</string></property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_lineRSTs">
+      <property name="text"><string>RST (S)</string></property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLineEdit" name="lineRSTs">
+      <property name="minimumSize"><size><width>60</width><height>50</height></size></property>
+      <property name="maximumSize"><size><width>60</width><height>16777215</height></size></property>
+      <property name="font">
+       <font><family>Segoe UI Black</family><pointsize>30</pointsize><weight>75</weight><bold>true</bold></font>
+      </property>
+      <property name="inputMask"><string>99</string></property>
+      <property name="text"><string>59</string></property>
+      <property name="maxLength"><number>2</number></property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="label_lineRSTr">
+      <property name="text"><string>RST (R)</string></property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLineEdit" name="lineRSTr">
+      <property name="minimumSize"><size><width>60</width><height>50</height></size></property>
+      <property name="maximumSize"><size><width>60</width><height>16777215</height></size></property>
+      <property name="font">
+       <font><family>Segoe UI Black</family><pointsize>30</pointsize><weight>75</weight><bold>true</bold></font>
+      </property>
+      <property name="inputMask"><string>99</string></property>
+      <property name="text"><string>59</string></property>
+      <property name="maxLength"><number>2</number></property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="6">
+     <widget class="QLabel" name="label_lineName">
+      <property name="text"><string>Imię i nazwisko</string></property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="6">
+     <widget class="QLineEdit" name="lineName">
+      <property name="minimumSize"><size><width>0</width><height>20</height></size></property>
+      <property name="font">
+       <font><family>Segoe UI Black</family><pointsize>12</pointsize><weight>75</weight><bold>true</bold></font>
+      </property>
+      <property name="placeholderText"><string>Imię operatora</string></property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_comboMode">
+      <property name="text"><string>Mode</string></property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="comboMode">
+      <item><property name="text"><string>SSB</string></property></item>
+      <item><property name="text"><string>LSB</string></property></item>
+      <item><property name="text"><string>USB</string></property></item>
+      <item><property name="text"><string>FM</string></property></item>
+      <item><property name="text"><string>AM</string></property></item>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLabel" name="label_lineFreq">
+      <property name="text"><string>Freq</string></property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLineEdit" name="lineFreq">
+      <property name="inputMask"><string>9999.9999</string></property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QLabel" name="label_labelBand">
+      <property name="text"><string>Band (auto)</string></property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLabel" name="labelBand"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_lineQTH">
+      <property name="text"><string>QTH</string></property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineQTH"/>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLabel" name="label_lineGrid">
+      <property name="text"><string>Grid</string></property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLineEdit" name="lineGrid"/>
+    </item>
+    <item row="5" column="0" colspan="6">
+     <widget class="QLineEdit" name="lineComment"/>
+    </item>
+    <item row="6" column="0" colspan="6">
+     <widget class="QLabel" name="labelQRZStatus">
+      <property name="font">
+       <font><family>Segoe UI Light</family><pointsize>9</pointsize><italic>true</italic><bold>true</bold></font>
+      </property>
+      <property name="text"><string>Status połączenia z QRZ: niepołączony</string></property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect><x>0</x><y>0</y><width>652</width><height>21</height></rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title"><string>Plik</string></property>
+    <addaction name="actionSettings"/>
+    <addaction name="actionDebug"/>
+   </widget>
+   <addaction name="menuPlik"/>
+  </widget>
+  <action name="actionSettings">
+   <property name="text"><string>Ustawienia</string></property>
+  </action>
+  <action name="actionDebug">
+   <property name="text"><string>Debug</string></property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
