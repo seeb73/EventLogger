@@ -1,0 +1,31 @@
+# Qt build and temp files
+*.user
+*.user.*
+*.pro.user
+*.pro.user.*
+*.autosave
+*.layout
+*.qbs.user
+
+# Build directories
+build/
+build-*/
+
+# Compiled files
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Qt Creator generated
+*.pro.user.*
+*.qmake.stash
